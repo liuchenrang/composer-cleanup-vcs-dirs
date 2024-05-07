@@ -25,3 +25,14 @@ To do so, simply run:
 
 Your entire project will be scanned, and all child .git
 directories under the project directory will be deleted.
+
+
+composer config
+```json
+    "post-install-cmd": [
+      "composer cleanup-vcs-dirs"
+    ],
+    "post-update-cmd": [
+      "composer cleanup-vcs-dirs"
+    ],
+```

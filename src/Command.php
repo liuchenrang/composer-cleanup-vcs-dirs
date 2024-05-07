@@ -17,5 +17,6 @@ class Command extends BaseCommand
 
     $handler = new Handler($this->getComposer(), $this->getIO());
     $handler->cleanupVcsDirs(getcwd(), true);
+    return 1;
   }
 }
